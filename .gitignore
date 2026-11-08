@@ -1,0 +1,23 @@
+# Proprietary firmware, credentials, runtime logs and local environments
+.venv*/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+private/
+dist/
+build/
+*.log
+*.mp4
+*.mov
+*.pem
+*.key
+*.p12
+*.pfx
+*.bin
+*.hex
+*.exe
+*.zip
+.DS_Store
+Thumbs.db

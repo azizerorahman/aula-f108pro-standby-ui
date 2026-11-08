@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "en": "Static",
+    "cn": "静态恒亮",
+    "source_key": 521,
+    "native_menu_mode": 0,
+    "host_protocol_mode": 1,
+    "thumbnail_id": 1
+  },
+  {
+    "id": 1,
+    "en": "SingleOn",
+    "cn": "单点亮",
+    "source_key": 522,
+    "native_menu_mode": 1,
+    "host_protocol_mode": 2,
+    "thumbnail_id": 2
+  },
+  {
+    "id": 2,
+    "en": "SingleOff",
+    "cn": "单熄灭",
+    "source_key": 523,
+    "native_menu_mode": 2,
+    "host_protocol_mode": 3,
+    "thumbnail_id": 3
+  },
+  {
+    "id": 3,
+    "en": "Glittering",
+    "cn": "繁星点点",
+    "source_key": 524,
+    "native_menu_mode": 3,
+    "host_protocol_mode": 4,
+    "thumbnail_id": 4
+  },
+  {
+    "id": 4,
+    "en": "Falling",
+    "cn": "漫天飞雪",
+    "source_key": 525,
+    "native_menu_mode": 4,
+    "host_protocol_mode": 5,
+    "thumbnail_id": 5
+  },
+  {
+    "id": 5,
+    "en": "Colourful",
+    "cn": "百花争艳",
+    "source_key": 526,
+    "native_menu_mode": 5,
+    "host_protocol_mode": 6,
+    "thumbnail_id": 6
+  },
+  {
+    "id": 6,
+    "en": "Breath",
+    "cn": "动态呼吸",
+    "source_key": 527,
+    "native_menu_mode": 6,
+    "host_protocol_mode": 7,
+    "thumbnail_id": 7
+  },
+  {
+    "id": 7,
+    "en": "Spectrum",
+    "cn": "光谱循环",
+    "source_key": 528,
+    "native_menu_mode": 7,
+    "host_protocol_mode": 8,
+    "thumbnail_id": 8
+  },
+  {
+    "id": 8,
+    "en": "Outward",
+    "cn": "彩泉涌动",
+    "source_key": 529,
+    "native_menu_mode": 8,
+    "host_protocol_mode": 9,
+    "thumbnail_id": 9
+  },
+  {
+    "id": 9,
+    "en": "Scrolling",
+    "cn": "多彩纵横",
+    "source_key": 530,
+    "native_menu_mode": 9,
+    "host_protocol_mode": 10,
+    "thumbnail_id": 10
+  },
+  {
+    "id": 10,
+    "en": "Rolling",
+    "cn": "随波逐流",
+    "source_key": 531,
+    "native_menu_mode": 10,
+    "host_protocol_mode": 11,
+    "thumbnail_id": 11
+  },
+  {
+    "id": 11,
+    "en": "Rotating",
+    "cn": "峰回路转",
+    "source_key": 532,
+    "native_menu_mode": 11,
+    "host_protocol_mode": 12,
+    "thumbnail_id": 12
+  },
+  {
+    "id": 12,
+    "en": "Explode",
+    "cn": "一触即发",
+    "source_key": 533,
+    "native_menu_mode": 12,
+    "host_protocol_mode": 13,
+    "thumbnail_id": 13
+  },
+  {
+    "id": 13,
+    "en": "Launch",
+    "cn": "一石二鸟",
+    "source_key": 534,
+    "native_menu_mode": 13,
+    "host_protocol_mode": 14,
+    "thumbnail_id": 14
+  },
+  {
+    "id": 14,
+    "en": "Ripples",
+    "cn": "涟漪扩散",
+    "source_key": 535,
+    "native_menu_mode": 14,
+    "host_protocol_mode": 15,
+    "thumbnail_id": 15
+  },
+  {
+    "id": 15,
+    "en": "Flowing",
+    "cn": "川流不息",
+    "source_key": 536,
+    "native_menu_mode": 15,
+    "host_protocol_mode": 16,
+    "thumbnail_id": 16
+  },
+  {
+    "id": 16,
+    "en": "Pulsating",
+    "cn": "重峦叠嶂",
+    "source_key": 537,
+    "native_menu_mode": 16,
+    "host_protocol_mode": 17,
+    "thumbnail_id": 17
+  },
+  {
+    "id": 17,
+    "en": "Tilt",
+    "cn": "斜风细雨",
+    "source_key": 538,
+    "native_menu_mode": 17,
+    "host_protocol_mode": 18,
+    "thumbnail_id": 18
+  },
+  {
+    "id": 18,
+    "en": "Shuttle",
+    "cn": "来回穿梭",
+    "source_key": 539,
+    "native_menu_mode": 18,
+    "host_protocol_mode": 19,
+    "thumbnail_id": 19
+  },
+  {
+    "id": 19,
+    "en": "LED Off",
+    "cn": "关闭背光",
+    "source_key": 540,
+    "native_menu_mode": 19,
+    "host_protocol_mode": 0,
+    "thumbnail_id": 0
+  }
+]

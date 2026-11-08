@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible UI, build or hardware behavior problem
+body:
+  - type: markdown
+    attributes:
+      value: Do not include passwords, serials, private HID paths, user directories or vendor firmware binaries.
+  - type: input
+    id: revision
+    attributes:
+      label: Project commit and keyboard firmware revision
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      options:
+        - Browser preview
+        - Offline build or tests
+        - Physical keyboard
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and hardware/region details

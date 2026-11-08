@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Offline interactive preview of Standby UI for the AULA F108 Pro keyboard.">
+<title>Standby UI · F108 Pro</title>
+<style>
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#202124;background:#f6f6f7;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:44px 24px 70px}header{display:flex;justify-content:space-between;align-items:start;gap:24px}h1{font-size:clamp(30px,5vw,48px);letter-spacing:-.045em;margin:4px 0 12px}h2{font-size:22px;letter-spacing:-.025em}p{line-height:1.6;color:#63656c;max-width:740px}.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:700;color:#777980;text-transform:uppercase}a{color:#3e516b;text-underline-offset:3px}button,select{font:inherit}button{border:1px solid #dcdde1;background:white;border-radius:10px;padding:10px 14px;cursor:pointer;color:#32343b}button:hover{background:#eceef1}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #f1a538;outline-offset:3px}button.active{background:#25272d;color:white;border-color:#25272d}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:24px 0}.tabs button{font-size:13px;padding:8px 12px}.workspace{background:white;border:1px solid #e3e4e8;border-radius:24px;padding:32px;display:grid;grid-template-columns:minmax(240px,2fr) minmax(170px,1fr);gap:32px;align-items:center}.device{background:#17181b;padding:12px;border-radius:22px;box-shadow:0 16px 40px #181a2012;max-width:600px}.screen{display:block;width:100%;height:auto;aspect-ratio:240/135;background:#000;border-radius:8px;image-rendering:pixelated}.controls{display:flex;gap:7px;flex-wrap:wrap;margin-top:22px;justify-content:center}.controls button{padding:9px 13px}#selection{font-size:20px;letter-spacing:-.025em;margin:0 0 10px}.hint{font-size:13px;line-height:1.7;color:#74767c}.language{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:15px}.language select{padding:7px;border:1px solid #ddd;border-radius:7px}.native label{font-size:13px;color:#60636a}.native input{vertical-align:middle}.device.actual{width:264px;max-width:100%;margin:auto}.note{font-size:12px;margin-top:20px;color:#85878d}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}figure{margin:0;background:white;padding:12px;border:1px solid #e5e5e9;border-radius:14px}figure img{width:100%;height:auto;image-rendering:pixelated;border-radius:5px}figcaption{font-size:12px;color:#70727a;margin-top:9px}.compare{width:100%;border-radius:14px;border:1px solid #e2e3e7}footer{border-top:1px solid #dedfe3;padding-top:22px;margin-top:42px;font-size:12px;color:#82848c}.gallery-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px}.gallery-head select{padding:7px;border-radius:8px;border:1px solid #ddd}
+@media(max-width:720px){main{padding:28px 16px}.workspace{grid-template-columns:1fr;padding:18px;gap:22px}header{display:block}.device{padding:10px;border-radius:18px}.gallery{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">Independent keyboard interface project</div><h1>Standby UI</h1><p>A calmer, clearer interface for a 240 × 135 screen. Explore the clock, square menus and controls using the simulated knob.</p></div><a href="https://github.com/azizerorahman/aula-f108pro-standby-ui">Source on GitHub ↗</a></header>
+<nav class="tabs" aria-label="Preview pages" id="tabs"></nav>
+<section class="workspace" aria-label="Keyboard simulator">
+<div><div class="device" id="device"><img id="screen" class="screen" width="240" height="135" alt="Standby clock"></div>
+<div class="controls"><button id="home">Clock</button><button id="back">Back</button><button id="previous" aria-label="Turn knob left">← Turn</button><button id="press">Press</button><button id="next" aria-label="Turn knob right">Turn →</button></div></div>
+<div><div class="language"><label for="locale">Preview language</label><select id="locale"><option value="en">English</option><option value="cn">中文</option></select></div>
+<h2 id="selection" aria-live="polite">Standby clock</h2><p class="hint" id="hint">Press to open the main menu. Arrow keys turn; Enter presses; Escape goes back.</p>
+<div class="native"><label><input type="checkbox" id="native"> Native 240 × 135 CSS size</label></div>
+<p class="note">This is an offline design simulator. Dates and battery readings are samples. It sends no USB commands. Hardware status and installation limits are documented in the repository.</p></div>
+</section>
+<h2>Before &amp; after</h2><img class="compare" src="images/before-after.png" width="1088" height="432" alt="Stock clock reconstruction beside the Standby UI render, enlarged equally">
+<p class="hint">Screen artwork comparison, not device photography. Stock reconstruction uses community reference graphics; regional layouts can differ.</p>
+<div class="gallery-head"><h2>All screens</h2><label for="filter">Category</label><select id="filter"><option value="all">All categories</option></select></div>
+<div class="gallery" id="gallery"></div>
+<footer>Experimental open-source project · <a href="https://github.com/azizerorahman/aula-f108pro-standby-ui/blob/main/docs/VALIDATION.md">Validation &amp; limitations</a> · <a href="https://github.com/azizerorahman/aula-f108pro-standby-ui/blob/main/THIRD_PARTY_NOTICES.md">Credits &amp; licenses</a><br>Optional computer-information dashboard is a proposal and is not part of this build.</footer>
+</main>
+<script>
+const screens=__SCREENS__,meta=__META__,effects=__EFFECTS__;
+const groups=['clock','menu','connect','system','effect','colour','brightness','speed','volume','language','status','boot'];
+const names={clock:'Clock',menu:'Menu',connect:'Connection',system:'System',effect:'Effect',colour:'Colour',brightness:'Brightness',speed:'Speed',volume:'Volume',language:'Language',status:'Pairing & results',boot:'Boot'};
+const categoryMenu=['connect','system','effect','colour','brightness','speed','volume','language'];
+let group='clock',index=0,locale='en',lastMenu=0,timer=null;
+const $=id=>document.getElementById(id);
+function items(g=group){return meta.filter(m=>m.group===g&&(m.language==='shared'||m.language===locale));}
+function jump(g,i=0,updateHash=true){if(!groups.includes(g))g='clock';group=g;index=i;if(updateHash)history.replaceState(null,'','#'+g);draw();}
+function draw(){const list=items();index=(index%list.length+list.length)%list.length;const m=list[index];$('screen').src=screens[m.id];$('screen').alt=names[group]+': '+m.label;$('screen').dataset.id=m.id;$('selection').textContent=names[group]+' · '+m.label;
+ $('hint').textContent=group==='menu'?'Turn to select a category. Press to enter.':group==='clock'?'Press to open the main menu. Arrow keys turn; Enter presses; Escape goes back.':group==='status'?'Illustrated pairing and result states. Turn to inspect each state.':'Turn to move through choices. Press previews confirmation; Back returns to the menu.';
+ document.querySelectorAll('#tabs button').forEach(b=>{b.classList.toggle('active',b.dataset.group===group);b.setAttribute('aria-pressed',String(b.dataset.group===group));});if(group==='menu')lastMenu=index;
+ clearTimeout(timer);if(group==='boot'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){timer=setTimeout(()=>{index=(index+1)%items().length;draw()},80);}
+}
+function turn(d){index+=d;draw();}
+function press(){if(group==='clock')jump('menu');else if(group==='menu')jump(categoryMenu[index]);else if(group==='language'){locale=index===0?'en':'cn';$('locale').value=locale;jump('menu',lastMenu);gallery();}else if(group==='connect'){jump('status',index>=2?0:3);}else if(group==='status')jump('menu',lastMenu);else jump('menu',lastMenu);}
+function gallery(){const filter=$('filter').value;const list=meta.filter(m=>(filter==='all'||m.group===filter)&&(m.language==='shared'||m.language===locale));$('gallery').replaceChildren(...list.map(m=>{const f=document.createElement('figure'),im=document.createElement('img'),c=document.createElement('figcaption');im.src=screens[m.id];im.alt=names[m.group]+': '+m.label;im.width=240;im.height=135;im.loading='lazy';c.textContent=names[m.group]+' · '+m.label;f.append(im,c);return f;}));}
+for(const g of groups){const b=document.createElement('button');b.textContent=names[g];b.dataset.group=g;b.onclick=()=>jump(g);$('tabs').append(b);const o=document.createElement('option');o.value=g;o.textContent=names[g];$('filter').append(o);}
+$('previous').onclick=()=>turn(-1);$('next').onclick=()=>turn(1);$('press').onclick=press;$('back').onclick=()=>jump(group==='menu'?'clock':'menu',group==='menu'?0:lastMenu);$('home').onclick=()=>jump('clock');
+$('locale').onchange=()=>{locale=$('locale').value;index=0;draw();gallery();};$('filter').onchange=gallery;$('native').onchange=()=>$('device').classList.toggle('actual',$('native').checked);
+document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();turn(1);}if(e.key==='ArrowLeft'){e.preventDefault();turn(-1);}if(e.key==='Enter'&&e.target===document.body){e.preventDefault();press();}if(e.key==='Escape')$('back').click();});
+addEventListener('hashchange',()=>jump(location.hash.slice(1),0,false));
+gallery();jump(location.hash.slice(1)||'clock',0,false);
+</script></body></html>

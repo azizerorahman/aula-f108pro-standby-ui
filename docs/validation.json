@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "experimental",
+  "published_checks": "See repository CI for tests of this export.",
+  "historical_offline_checks": {
+    "async_display": 970,
+    "native_knob": 80,
+    "native_lighting": 40,
+    "browser_assets": 261,
+    "transport_scenarios": 7
+  },
+  "device_evidence": {
+    "firmware_checksum_verified": true,
+    "graphics_pages_acknowledged": 1807,
+    "spi_readback_available": false,
+    "clock_and_menus_observed_before_latest_effect_correction": true,
+    "latest_effect_off_physical_check": "pending",
+    "connection_flicker_physical_check": "pending"
+  },
+  "custom_information_page": "proposal only; not installed"
+}

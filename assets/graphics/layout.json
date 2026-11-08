@@ -1,0 +1,1352 @@
+{
+  "schema_version": 1,
+  "atlas": "assets/graphics/atlas.png",
+  "bytes": 7401472,
+  "sha256": "5cda49967d090aaeeaf564a47aa47890955ede7e9315165356c61361f7c92c0b",
+  "page_size": 4096,
+  "custom_animation_start": 7602176,
+  "boot_header_address": 3342336,
+  "boot_frames": 20,
+  "screens": [
+    {
+      "id": "menu_0",
+      "address": 0,
+      "rect": [
+        30,
+        15,
+        157,
+        109
+      ]
+    },
+    {
+      "id": "menu_1",
+      "address": 34228,
+      "rect": [
+        53,
+        15,
+        156,
+        109
+      ]
+    },
+    {
+      "id": "menu_2",
+      "address": 68236,
+      "rect": [
+        30,
+        15,
+        157,
+        109
+      ]
+    },
+    {
+      "id": "menu_3",
+      "address": 102464,
+      "rect": [
+        53,
+        15,
+        156,
+        109
+      ]
+    },
+    {
+      "id": "menu_4",
+      "address": 136472,
+      "rect": [
+        30,
+        15,
+        157,
+        109
+      ]
+    },
+    {
+      "id": "menu_5",
+      "address": 170700,
+      "rect": [
+        53,
+        13,
+        158,
+        111
+      ]
+    },
+    {
+      "id": "menu_6",
+      "address": 205776,
+      "rect": [
+        30,
+        15,
+        157,
+        109
+      ]
+    },
+    {
+      "id": "menu_7",
+      "address": 240004,
+      "rect": [
+        53,
+        15,
+        156,
+        109
+      ]
+    },
+    {
+      "id": "clock_en",
+      "address": 274012,
+      "rect": [
+        10,
+        8,
+        220,
+        117
+      ]
+    },
+    {
+      "id": "clock_cn",
+      "address": 325492,
+      "rect": [
+        10,
+        8,
+        220,
+        117
+      ]
+    },
+    {
+      "id": "clock_state_1",
+      "address": 376972,
+      "rect": [
+        10,
+        8,
+        220,
+        116
+      ]
+    },
+    {
+      "id": "clock_state_2",
+      "address": 428012,
+      "rect": [
+        9,
+        8,
+        221,
+        118
+      ]
+    },
+    {
+      "id": "clock_state_3",
+      "address": 480168,
+      "rect": [
+        10,
+        8,
+        220,
+        117
+      ]
+    },
+    {
+      "id": "clock_state_4",
+      "address": 531648,
+      "rect": [
+        9,
+        8,
+        221,
+        118
+      ]
+    },
+    {
+      "id": "clock_state_5",
+      "address": 583804,
+      "rect": [
+        10,
+        8,
+        220,
+        117
+      ]
+    },
+    {
+      "id": "clock_state_6",
+      "address": 635284,
+      "rect": [
+        9,
+        8,
+        222,
+        118
+      ]
+    },
+    {
+      "id": "clock_state_7",
+      "address": 687676,
+      "rect": [
+        10,
+        8,
+        220,
+        116
+      ]
+    },
+    {
+      "id": "clock_state_8",
+      "address": 738716,
+      "rect": [
+        10,
+        8,
+        220,
+        117
+      ]
+    },
+    {
+      "id": "clock_state_9",
+      "address": 790196,
+      "rect": [
+        9,
+        8,
+        221,
+        118
+      ]
+    },
+    {
+      "id": "brightness_0",
+      "address": 842352,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "brightness_1",
+      "address": 869288,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "brightness_2",
+      "address": 896224,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "brightness_3",
+      "address": 923160,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "brightness_4",
+      "address": 950096,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "brightness_5",
+      "address": 977032,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_0",
+      "address": 842352,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_1",
+      "address": 1003968,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_2",
+      "address": 1030904,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_3",
+      "address": 1057840,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_4",
+      "address": 1084776,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "speed_5",
+      "address": 1111712,
+      "rect": [
+        29,
+        30,
+        182,
+        74
+      ]
+    },
+    {
+      "id": "effect_en_0",
+      "address": 1138648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_1",
+      "address": 1203448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_2",
+      "address": 1268248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_3",
+      "address": 1333048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_4",
+      "address": 1397848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_5",
+      "address": 1462648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_6",
+      "address": 1527448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_7",
+      "address": 1592248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_8",
+      "address": 1657048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_9",
+      "address": 1721848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_10",
+      "address": 1786648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_11",
+      "address": 1851448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_12",
+      "address": 1916248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_13",
+      "address": 1981048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_14",
+      "address": 2045848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_15",
+      "address": 2110648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_16",
+      "address": 2175448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_17",
+      "address": 2240248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_18",
+      "address": 2305048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_en_19",
+      "address": 2369848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_0",
+      "address": 2434648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_1",
+      "address": 2499448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_2",
+      "address": 2564248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_3",
+      "address": 2629048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_4",
+      "address": 2693848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_5",
+      "address": 2758648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_6",
+      "address": 2823448,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_7",
+      "address": 2888248,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_8",
+      "address": 2953048,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_9",
+      "address": 3017848,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_10",
+      "address": 3082648,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_11",
+      "address": 4757120,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_12",
+      "address": 4821920,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_13",
+      "address": 6249376,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_14",
+      "address": 6314176,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_15",
+      "address": 6378976,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_16",
+      "address": 6443776,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_17",
+      "address": 6508576,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_18",
+      "address": 6573376,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "effect_cn_19",
+      "address": 6638176,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "colour_0",
+      "address": 3195256,
+      "rect": [
+        14,
+        29,
+        207,
+        72
+      ]
+    },
+    {
+      "id": "colour_1",
+      "address": 3225064,
+      "rect": [
+        19,
+        29,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_2",
+      "address": 3254152,
+      "rect": [
+        19,
+        29,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_3",
+      "address": 3283240,
+      "rect": [
+        19,
+        29,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_4",
+      "address": 3312328,
+      "rect": [
+        19,
+        29,
+        207,
+        72
+      ]
+    },
+    {
+      "id": "colour_5",
+      "address": 4640768,
+      "rect": [
+        19,
+        34,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_6",
+      "address": 4669856,
+      "rect": [
+        19,
+        34,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_7",
+      "address": 4698944,
+      "rect": [
+        19,
+        34,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "colour_8",
+      "address": 4728032,
+      "rect": [
+        19,
+        34,
+        202,
+        72
+      ]
+    },
+    {
+      "id": "connect_0",
+      "address": 6702976,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "connect_1",
+      "address": 6767776,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "connect_2",
+      "address": 6832576,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "connect_3",
+      "address": 6897376,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "connect_4",
+      "address": 6962176,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "system_0",
+      "address": 4951056,
+      "rect": [
+        45,
+        16,
+        148,
+        101
+      ]
+    },
+    {
+      "id": "system_1",
+      "address": 4980952,
+      "rect": [
+        47,
+        16,
+        148,
+        101
+      ]
+    },
+    {
+      "id": "system_2",
+      "address": 5010848,
+      "rect": [
+        45,
+        18,
+        148,
+        101
+      ]
+    },
+    {
+      "id": "system_3",
+      "address": 5040744,
+      "rect": [
+        47,
+        18,
+        148,
+        101
+      ]
+    },
+    {
+      "id": "language_0",
+      "address": 5070640,
+      "rect": [
+        16,
+        35,
+        206,
+        65
+      ]
+    },
+    {
+      "id": "language_1",
+      "address": 5097420,
+      "rect": [
+        18,
+        35,
+        206,
+        65
+      ]
+    },
+    {
+      "id": "volume_0",
+      "address": 5124200,
+      "rect": [
+        29,
+        43,
+        180,
+        49
+      ]
+    },
+    {
+      "id": "volume_1",
+      "address": 5141840,
+      "rect": [
+        31,
+        45,
+        178,
+        45
+      ]
+    },
+    {
+      "id": "volume_2",
+      "address": 5157860,
+      "rect": [
+        31,
+        43,
+        180,
+        49
+      ]
+    },
+    {
+      "id": "status_en_pair_bt_0",
+      "address": 5175500,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_pair_bt_1",
+      "address": 5184884,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_pair_bt_2",
+      "address": 5194268,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_pair_radio_0",
+      "address": 5175500,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_pair_radio_1",
+      "address": 5184884,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_pair_radio_2",
+      "address": 5194268,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_success_0",
+      "address": 5203652,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_timeout_0",
+      "address": 5213036,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_cable_0",
+      "address": 5222420,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_en_saved_0",
+      "address": 5203652,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_bt_0",
+      "address": 5175500,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_bt_1",
+      "address": 5184884,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_bt_2",
+      "address": 5194268,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_radio_0",
+      "address": 5175500,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_radio_1",
+      "address": 5184884,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_pair_radio_2",
+      "address": 5194268,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_success_0",
+      "address": 5203652,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_timeout_0",
+      "address": 5213036,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_cable_0",
+      "address": 5222420,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "status_cn_saved_0",
+      "address": 5203652,
+      "rect": [
+        86,
+        33,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "boot_00",
+      "address": 3342592,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_01",
+      "address": 3407392,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_02",
+      "address": 3472192,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_03",
+      "address": 3536992,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_04",
+      "address": 3601792,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_05",
+      "address": 3666592,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_06",
+      "address": 3731392,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_07",
+      "address": 3796192,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_08",
+      "address": 3860992,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_09",
+      "address": 3925792,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_10",
+      "address": 3990592,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_11",
+      "address": 4055392,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_12",
+      "address": 4120192,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_13",
+      "address": 4184992,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_14",
+      "address": 4249792,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_15",
+      "address": 4314592,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_16",
+      "address": 4379392,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_17",
+      "address": 4444192,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_18",
+      "address": 4508992,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    },
+    {
+      "id": "boot_19",
+      "address": 4573792,
+      "rect": [
+        0,
+        0,
+        240,
+        135
+      ]
+    }
+  ]
+}
