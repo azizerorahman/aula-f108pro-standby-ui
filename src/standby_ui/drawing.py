@@ -173,7 +173,7 @@ def page_screen(page, sel, variant="ring"):
 # brightness without a title (title tile drawn black)
 SEG_X0, SEG_W, SEG_GAP, SEG_Y0, SEG_H = 30, 33, 4, 98, 8
 def inter_f(px, w):
-    f = ImageFont.truetype(INTER, px); f.set_variation_by_axes([min(32, max(14, px)), w]); return f
+    f = ImageFont.truetype(INTER, px, layout_engine=ImageFont.Layout.BASIC); f.set_variation_by_axes([min(32, max(14, px)), w]); return f
 FBIG = inter_f(62, 720)
 def brightness(level):
     c = Canvas(); s = str(level)

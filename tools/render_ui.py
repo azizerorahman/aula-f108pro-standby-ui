@@ -15,7 +15,7 @@ FONT_CACHE={}
 def font(size,cn=False,weight=600):
     key=(size,cn,weight)
     if key not in FONT_CACHE:
-        f=ImageFont.truetype(str(FD/("NotoSansSC-VF.ttf" if cn else "Inter-VF.ttf")),size)
+        f=ImageFont.truetype(str(FD/("NotoSansSC-VF.ttf" if cn else "Inter-VF.ttf")),size,layout_engine=ImageFont.Layout.BASIC)
         f.set_variation_by_axes([weight] if cn else [min(32,max(14,size)),weight])
         FONT_CACHE[key]=f
     return FONT_CACHE[key]

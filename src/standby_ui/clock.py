@@ -16,16 +16,17 @@ def quant(a):
     r, g, b = (a[..., 0] * 31 + 127) // 255, (a[..., 1] * 63 + 127) // 255, (a[..., 2] * 31 + 127) // 255
     return Image.fromarray(np.stack([(r << 3) | (r >> 2), (g << 2) | (g >> 4), (b << 3) | (b >> 2)], -1).astype(np.uint8), "RGB")
 
+# Match the reference text metrics even when a Pillow build includes optional RAQM.
 _fc = {}
 def inter(px, w=600):
     k = ("i", px, w)
     if k not in _fc:
-        f = ImageFont.truetype(INTER, px); f.set_variation_by_axes([min(32, max(14, px)), w]); _fc[k] = f
+        f = ImageFont.truetype(INTER, px, layout_engine=ImageFont.Layout.BASIC); f.set_variation_by_axes([min(32, max(14, px)), w]); _fc[k] = f
     return _fc[k]
 def noto(px, w=500):
     k = ("n", px, w)
     if k not in _fc:
-        f = ImageFont.truetype(NOTO, px); f.set_variation_by_axes([w]); _fc[k] = f
+        f = ImageFont.truetype(NOTO, px, layout_engine=ImageFont.Layout.BASIC); f.set_variation_by_axes([w]); _fc[k] = f
     return _fc[k]
 
 # ---------------- tokens ----------------
