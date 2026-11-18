@@ -32,7 +32,15 @@ $receipt=Join-Path $runDirectory 'result.json'
 }
 try{
  $null=[StandbyTransport]::ProgramMcu($commands[0].InstanceId,$fw)
- Start-Sleep -Milliseconds 1500
+ $commands=@(); $data=@()
+ for($i=0; $i -lt 20; $i++){
+  Start-Sleep -Milliseconds 500
+  $rows=@(Get-PnpDevice -PresentOnly | Where-Object {$_.InstanceId -like 'HID\VID_0C45&PID_800A&*' -and $_.Status -eq 'OK'})
+  $commands=@($rows | Where-Object {[StandbyTransport]::IsInterface($_.InstanceId,0xff13,0x0107)})
+  $data=@($rows | Where-Object {[StandbyTransport]::IsInterface($_.InstanceId,0xff68,0x0107)})
+  if($commands.Count -eq 1 -and $data.Count -eq 1){break}
+ }
+ if($commands.Count -ne 1 -or $data.Count -ne 1){throw 'Keyboard HID interfaces did not re-enumerate after MCU programming.'}
  $null=[StandbyTransport]::ProgramGraphics($commands[0].InstanceId,$data[0].InstanceId,$spi)
  $result=@{status='transfer_complete_physical_check_pending';transfer=[StandbyTransport]::Current}
  [IO.File]::WriteAllText($receipt,($result|ConvertTo-Json -Depth 8),[Text.UTF8Encoding]::new($false))
